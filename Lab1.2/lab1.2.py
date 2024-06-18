@@ -10,8 +10,10 @@ sheet = wb['Data']
 list_x = list(map(getvalue, sheet['A'][1:]))
 list_y = list(map(getvalue, sheet['C'][1:]))
 list_t = list(map(getvalue, sheet['D'][1:]))
+list_t2 = list(map(getvalue, sheet['B'][1:]))
 
 pyplot.plot(list_x, list_y)
 pyplot.plot(list_x, list_t)
+pyplot.plot(list_x, list_t2)
 
 pyplot.show()
